@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tangruiming</title>
+</head>
+<body>
+    <img id="miyimage" onclick="changeImage()" src="img/pic_bulboff.gif" width="100px" height="150px">
+    <h2>点击灯泡可以打开或关闭</h2>
+    <h2>Tap the bulb to turn it on or off</h2>
+
+    <script>
+        function changeImage() {
+         const element=document.getElementById("miyimage");
+         if(element.src.includes("pic_bulboff.gif")){
+            element.src="img/pic_bulbon.gif";
+         }else{
+            element.src="img/pic_bulboff.gif";
+          } 
+        }      
+    </script>
+</body>
+</html>
